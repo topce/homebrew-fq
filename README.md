@@ -10,17 +10,13 @@ dependencies.
 brew install topce/fq/fq
 ```
 
-or, to enable plain `brew install fq` afterwards:
+That's it — no manual tap needed; the fully qualified name pulls the
+formula straight from this tap.
 
-```sh
-brew tap topce/fq
-brew install fq
-```
-
-> Note: the name `fq` is also used by an unrelated homebrew-core formula
-> (circonus-labs/fq, a message broker). `brew install fq` without tapping
-> installs that one. Always install from this tap as `topce/fq/fq`, or tap
-> first so your tap shadows core.
+> **Name clash:** an unrelated message broker is also published as `fq` in
+> homebrew-core. homebrew-core outranks third-party taps, so plain
+> `brew install fq` installs *that* broker. Always use the fully qualified
+> `brew install topce/fq/fq` to get this tool.
 
 ## Usage
 
