@@ -1,8 +1,8 @@
 class Fq < Formula
   desc "Force-quit macOS applications from the command-line, like the Force Quit dialog"
   homepage "https://github.com/topce/fq"
-  url "https://github.com/topce/fq/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c23d5966f5b06847f21f9343c3144d68f3afcfb98402e1a9b0e2d703a8d35441"
+  url "https://github.com/topce/fq/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "91ead081a51c2d398d7c334cec49211b4324e1ca212a5c2094de888cd4ef3264"
   license "MIT"
 
   depends_on "dune" => :build
@@ -18,7 +18,7 @@ class Fq < Formula
   end
 
   test do
-    assert_match "fq 0.1.0", shell_output("#{bin}/fq --version")
+    assert_match "fq 0.2.0", shell_output("#{bin}/fq --version")
     assert_match "fq", shell_output("#{bin}/fq --help")
   end
 end
